@@ -1,0 +1,13 @@
+app:
+  database:
+    type: ${db.type:SQL}
+    sql:
+      url: jdbc:h2:mem:product_db;MODE=MySQL;DB_CLOSE_DELAY=-1;IGNORECASE=TRUE;
+      driverClassName: org.h2.Driver
+      username: root
+      password: root
+      database-platform: org.hibernate.dialect.H2Dialect
+    mongo:
+      host: localhost
+      port: 27017
+      database: product_db
